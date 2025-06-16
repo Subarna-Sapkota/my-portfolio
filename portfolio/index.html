@@ -3,20 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== UNICONS ===============-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css " />
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
 
     <title>Portfolio Website</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+<nav class="nav container">
+  <a href="index.html" class="nav__logo">sub<span>ar</span>na</a>
+  <div class="nav__menu" id="nav-menu">
+   <ul class="nav__list">
 
+<li><a href="#home" class="nav__link active-link">Home</a></li>
+
+<li><a href="#about" class="nav__link">About</a></li>
+
+<li><a href="#services" class="nav__link">Services</a></li>
+
+<li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+
+<li><a href="#contact" class="nav__link">Contact</a></li>
+  </ul>
+
+  <div class="nav__close" id="nav-close">
+    <i class="ui uil-times"></i>
+  </div>
+</div>
+
+<div class="nav__socials">
+        <a href="#"
+         target="_blank"
+        class="nav__social-link">
+
+          <i class="uil uil-facebook-f"></i>
+        </a>
+
+        <a href="#"
+         target="_blank"
+        class="nav__social-link">
+
+          <i class="uil uil-linkedin"></i>
+        </a>
+        <a href="#"
+         target="_blank"
+        class="nav__social-link">
+
+          <i class="uil uil-github"></i>
+        </a>
+        <a href="#"
+         target="_blank"
+        class="nav__social-link">
+
+        <i class="uil uil-instagram"></i>
+        </a>
+      </div>
+
+      <div class="nav__btns">
+        <a href="#contact" class="nav__link-btn btn">Let's Talk</a>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-bars"></i>
+        </div>
+      </div>
+
+</nav>
+
+    </header>
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
@@ -121,24 +182,224 @@
 
       <!--=============== SERVICES ===============-->
       <section class="services section" id="services">
-      <h2 class="section__title">What I Offer</h2>
+      <h2 class="section1__title">What I Offer</h2>
       <p class="section__description">I offer a blend of full-stack web development, graphic design, UI/UX, and cybersecurity services to help bring your ideas to life. 
-        From building modern, responsive websites to designing user-friendly interfaces and keeping your projects secure—I’m here to support you every step of the way</p>
+        From building modern, responsive websites to designing user-friendly interfaces and keeping your projects secure—I’m here to support you every step of the way.
+      </p>
+      <div class="services__container container grid"> 
+        <div class="services__item">
+          <i class="uil uil-globe services__icon"></i>
+          <h3 class="services__title">Full-Stack Web Development</h3>
+          <p class="services__description">Building fast, responsive websites with seamless front-end and back-end integration to meet your business needs.
+          </p>
+        </div>
+
+
+          <div class="services__item">
+        <i class="uil uil-palette services__icon"></i>
+        <h3 class="services__title">UI/UX Design & Branding</h3>
+        <p class="services__description">Creating intuitive, user-friendly designs and strong brand identities that engage and delight your audience.
+        </p>
+          
+        </div>
+
+       
+          <div class="services__item">
+        <i class="uil uil-lightbulb-alt services__icon"></i>
+        <h3 class="services__title">Business & Digital Strategy</h3>
+        <p class="services__description">Developing smart strategies to help your business grow, compete, and thrive in the digital world.
+        </p>
+        
+        </div>
+
+        
+          <div class="services__item">
+        <i class="uil uil-megaphone services__icon"></i>
+        <h3 class="services__title">Marketing & Campaign Management</h3>
+        <p class="services__description">Crafting and managing marketing campaigns that boost visibility, engagement, and sales for your brand
+        </p>
+         
+        </div>
+
+       
+          <div class="services__item">
+        <i class="uil uil-chart-line services__icon"></i>
+        <h3 class="services__title">Analytics & Performance Reporting</h3>
+        <p class="services__description">Tracking and analyzing data to provide actionable insights that drive smarter business decisions.
+        </p>
+         
+        </div>
+
+      
+          <div class="services__item">
+        <i class="uil uil-shield-check services__icon"></i>
+        <h3 class="services__title">Cybersecurity & Data Protection</h3>
+        <p class="services__description">Implementing robust security measures to protect your data and digital assets from threats.
+        </p>
+        
+        </div>
+      </div>
 </section>
       <!--=============== PORTFOLIO ===============-->
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section1__title">What I’ve Built</h2>
+        <p class="section__description">Here are some of my latest projects, showcasing my skills in web development, design, and security.</p>
+     
+        <div class="portfolio__container container grid">
+<div class="portfolio__item">
+<img src="assets/img/portfolio-1.jpg" 
+alt="" 
+class="portfolio__img"
+/>
+<div class="portfolio__data">
+  <p class="portfolio__subtitle">Web Development</p>
+  <h3 class="portfolio__title">Websites that do the heavy lifting</h3>
+<p class="portfolio__description">Building responsive, fast websites with smooth front-end and back-end integration.
+</p>
+</div>
+
+</div>
+
+<div class="portfolio__item">
+<img src="assets/img/portfolio-2.jpg" 
+alt="" 
+class="portfolio__img"
+/>
+<div class="portfolio__data">
+  <p class="portfolio__subtitle">Graphic Design</p>
+  <h3 class="portfolio__title">Visuals that speak for you</h3>
+<p class="portfolio__description">Creating clean, intuitive designs that enhance user experience and branding.
+</p>
+</div>
+
+</div>
+
+<div class="portfolio__item">
+<img src="assets/img/portfolio-3.jpg" 
+alt="" 
+class="portfolio__img"
+/>
+<div class="portfolio__data">
+  <p class="portfolio__subtitle">UI/UX </p>
+  <h3 class="portfolio__title">Design that feels just right</h3>
+<p class="portfolio__description">Creating seamless, user-friendly interfaces that blend function and style beautifully.
+</p>
+</div>
+
+</div>
+ 
+      </div>
+      
+      </section>
 
       <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact"></section>
-    </main>
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__content">
+        <h2 class="section__title">Hire Me</h2>
+
+        <p class="contact__description">
+          I am currently available for freelance opportunities.
+          If you're interested in working together or have any inquiries, feel free to reach out to me via phone:
+          <a href="tel:+9779862213638">+977 9862213638</a> or email:
+          <a href="mailto:subarnasapkota04@gmail.com">subarnasapkota04@gmail.com</a>.
+          I look forward to connecting with you!
+        </p>
+        <form class="contact__form" id="contact-form">
+          <div class="contact__form-input">
+           <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact__input"
+          id="contact-name"
+           />
+
+          </div>
+
+          <div class="contact__form-input">
+            <input
+          type="email"
+          name="email"
+          placeholder="Your e-mail"
+          class="contact__input"
+          id="contact-email"
+            />
+          </div>
+
+          <div class="contact__form-input">
+            <input
+          type="text"
+          name="subject"
+          placeholder="write a Subject"
+          class="contact__input"
+          id="contact-subject"
+            />
+          </div>
+
+          <div class="contact__form-input">
+            <textarea
+          name="message"
+          id="contact-message"
+          class="contact__input textarea"
+          placeholder="Your message"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Submit" class="btn" />
+
+          <p class="error__message" id="error-message"></p>
+        </form>
+          </div>
+          <img class="contact__img" src="assets/img/home.jpg" alt="" />
+        </div>
+      </section>
+        </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <a href="index.html" class="footer__logo">sub<span>ar</span>na</a>
+      <div class="footer__socials">
+        <a href="#"
+         target="_blank"
+        class="footer__social-link">
+
+          <i class="uil uil-facebook-f"></i>
+        </a>
+
+        <a href="#"
+         target="_blank"
+        class="footer__social-link">
+
+          <i class="uil uil-linkedin"></i>
+        </a>
+        <a href="#"
+         target="_blank"
+        class="footer__social-link">
+
+          <i class="uil uil-github"></i>
+        </a>
+        <a href="#"
+         target="_blank"
+        class="footer__social-link">
+        
+        <i class="uil uil-instagram"></i>
+        </a>
+      </div>
+<p class="footer__copyright">© 2025. All rights reserved.</p>
+      </div>
+    </footer>
 
     <!--=============== SCROLL UP ===============-->
-
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="uis uis-angle-up scrollup__icon"></i>
+</a>
+</a>
     <!--=============== EMAIL JS ===============-->
-    <script src=""></script>
+    <script 
+    type="text/javascript" 
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
